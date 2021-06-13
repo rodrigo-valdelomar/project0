@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang=eng>
+
+    <head>
+        <title>Google</title>
+        <style>
+            .header{
+                display: flex;
+                flex-direction: column;
+            }
+            .flex-container{
+                display: flex;
+                justify-content: flex-end;
+                /* padding: 20px; */
+                align-items: center;
+                height: 100%;
+            }
+
+            .flexbox-item{
+                width: 15%;
+                /* background-color: #ff652f;
+                border: 3px solid #272727;
+                color: white; */
+                font-size: 2em;
+                /* padding: 20px; */
+                margin: 10px;
+            }
+
+            .item1{
+                min-height: 60px;
+                flex: 2 4 25%;
+            }
+
+            .item2{
+                min-height: 100px;
+                flex: 1 1 25%;
+            }
+
+            .item3{
+                min-height: 250px;
+                flex: 2 1 7%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                font-size: 12px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <main>
+            <div class="header">
+                <div class="flex-container">
+                    <div class="flexbox-item item1" style="hidden;"></div>
+                    <div class="flexbox-item item2"></div>
+                    <div class="flexbox-item item3">
+                        <div>
+                            <a href="/images.html" target="_top">Images</a>
+                        </div>
+                        <div>
+                            <a href="advancesearch.html" target="_top">Advance Search</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img alt="Google" height="92" src="Static/googlelogo_color_272x92dp.png" width="272">
+                </div>
+                <div style="margin-top: 1.5%;">
+                    <form action="https://www.google.com/search" method="GET" role="search">
+                    
+                        <div style="width: 41%; height: 30%; border-style:0,5px; border-radius: 10px;">
+                            <input name=q type="search"> 
+                        </div>
+
+                        <div style="margin-top: 1.6%;">
+                                <input type="submit" value="Google  Search">
+                                <input type="submit" value="I'm feeling lucky"
+                        </div>
+                    </form>
+                </div>    
+            </div>
+        </main>
+    </body>
+</html>
