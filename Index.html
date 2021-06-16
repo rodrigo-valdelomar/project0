@@ -29,40 +29,41 @@
 
             .flex-container{
                 display: flex;
-                justify-content: flex-end;
-                /* padding: 20px; */
                 align-items: center;
-                height: 100%;
+                padding: 6px;
+                min-height: 60px
             }
 
             .flexbox-item{
                 width: 15%;
-                /* background-color: #ff652f;
-                border: 3px solid #272727;
-                color: white; */
                 font-size: 13px;
                 font-family: arial, sans-serif;
-                /* padding: 20px; */
-                margin: 10px;
             }
 
             .item1{
-                min-height: 60px;
                 flex: 2 4 25%;
             }
 
             .item2{
-                min-height: 100px;
                 flex: 1 1 25%;
             }
 
             .item3{
-                min-height: 250px;
                 flex: 2 1 7%;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-evenly;
                 color: #222;
+            }
+
+            .main-body{
+                display: flex;
+                /* flex-direction: column; */
+                justify-content: center;
+            }
+
+            .margin-top{
+                margin-top: auto;
             }
         </style>
     </head>
@@ -71,7 +72,7 @@
         <main>
             <div class="header">
                 <div class="flex-container">
-                    <div class="flexbox-item item1" style="hidden;"></div>
+                    <div class="flexbox-item item1"></div>
                     <div class="flexbox-item item2"></div>
                     <div class="flexbox-item item3">
                         <div>
@@ -82,22 +83,24 @@
                         </div>
                     </div>
                 </div>
-                <div>
-                    <img alt="Google" height="92" src="Static/googlelogo_color_272x92dp.png" width="272">
-                </div>
-                <div style="margin-top: 1.5%;">
-                    <form action="https://www.google.com/search" method="GET" role="search">
-                    
-                        <div style="width: 41%; height: 30%; border-style:0,5px; border-radius: 10px;">
-                            <input name=q type="search"> 
-                        </div>
+                <!-- <div class="main-body"> -->
+                    <div class="main-body margin-top">
+                        <img alt="Google" height="92" src="Static/googlelogo_color_272x92dp.png" width="272">
+                    </div>
+                    <div class="main-body" style="margin-top: 1.5%;">
+                        <form action="https://www.google.com/search" method="GET" role="search">
+                        
+                            <div class="main-body">
+                                <input name=q type="search"> 
+                            </div>
 
-                        <div style="margin-top: 1.6%;">
-                                <input type="submit" value="Google  Search">
-                                <input type="submit" value="I'm feeling lucky"
-                        </div>
-                    </form>
-                </div>    
+                            <div>
+                                    <input type="submit" value="Google  Search">
+                                    <input type="submit" value="I'm feeling lucky">
+                            </div>
+                        </form>
+                    </div>
+                <!-- </div>     -->
             </div>
         </main>
     </body>
