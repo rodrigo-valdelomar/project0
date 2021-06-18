@@ -162,6 +162,77 @@
                 flex: 1;
                 flex-wrap: wrap;
             }
+
+            .is{
+                color: transparent;
+                flex: 100%;
+                white-space: pre;
+                height: 34px;
+                display: block;
+            }
+
+            .pi{
+                background-color: transparent;
+                border: none;
+                margin: 0;
+                padding: 0;
+                color: rgb(0,0,0,0.87);
+                word-wrap: break-word;
+                outline: none;
+                display: flex;
+                flex: 100%;
+                -webkit-tap-highlight-color: transparent;
+                margin-top: -37px;
+                height: 34px;
+                font-size: 16px;
+                -webkit-writting-mode: horizontal-tb;
+                text-rendering: auto;
+                letter-spacing: normal;
+                word-spacing: normal;
+                text-transform: none;
+                text-indent: 0px;
+                text-shadow: none;
+                text-align: start;
+                appearance: auto;
+                cursor: text;
+                font-weight: 400;
+            }
+
+            .bt{
+                height: 70px;
+                padding: 18px;
+                top: 53px;
+                display: block;
+            }
+
+            .b1{
+                background-color: #f8f9fa;
+                border: 1px solid #f8f9fa;
+                color: #3c4043;
+                border-radius: 4px;
+                margin: 11px 4px;
+                padding: 0 16px;
+                line-height: 27px;
+                height: 36px;
+                min-width: 54px;
+                text-align: center;
+                cursor: pointer;
+                user-select: none;
+                appearance: auto;
+                white-space: pre;
+                align-items: flex-start;
+                box-sizing: border-box;
+                -webkit-writing-mode: horizontal-tb !important;
+                text-rendering: auto;
+                letter-spacing: normal;
+                word-spacing: normal;
+                text-transform: none;
+                text-indent: 0px;
+                text-shadow: none;
+                display: inline-block;
+                -webkit-rtl-ordering: logical;
+                font-weight: 400;
+            }
         </style>
     </head>
     <body>
@@ -195,10 +266,16 @@
                         <div class="s3">
                             <span class="r1 r2"></span>
                             <div class="ps">
-                                <div></div>
-                                <input>                            
+                                <div class="is"></div>
+                                <input class="pi">                            
                             </div>
                             <span class="r3 r2"></span>
+                        </div>
+                        <div class="bt">
+                            <center>
+                                <input class="b1" value="Google Search" aria-label="Google Search" name="btnK" type="submit" >
+                                <input class="b1" value="I'm Felling Lucky" aria-label="I'm Felling Lucky" name="btnI" type="submit">
+                            </center>
                         </div>
                     </div>
                 </form>
